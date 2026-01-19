@@ -131,12 +131,13 @@ short_vid_generation/
 # Sample result
 
 User input: 
-vid_text = """When you send your email and realize it has a typo..."""
-vid_duration = "15"
-seed_scenes = "1) A small orange cat sits like a human slouched on an office chair. It looks sad. 2) The cat puts its forehead on the table while banging a fist at the table. 3) A view of the keyboard as a fluffy paw presses send."
+* vid_text = """When you send your email and realize it has a typo..."""
+* vid_duration = "15"
+* seed_scenes = "1) A small orange cat sits like a human slouched on an office chair. It looks sad. 2) The cat puts its forehead on the table while banging a fist at the table. 3) A view of the keyboard as a fluffy paw presses send."
 
 Final result: https://www.youtube.com/shorts/IC9rqnvBRWU
 
 Note: editing and background audio added manually
+
 
 
