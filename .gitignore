@@ -1,0 +1,42 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.env
+*.env.*
+
+# Logs
+*.log
+
+# VS Code / IDE settings
+.vscode/
+.idea/
+
+# Generated files and folders
+*_subtitle_long.json
+*_subtitle_short.json
+*_srt_short.srt
+*_scenes.json
+*_video_prompts.json
+
+# Generated images
+*_images/
+*_images/*.png
+*_images/*.jpg
+
+# Generated videos
+*_videos/
+*_videos/*.mp4
+
+# Audio files
+*_voice_file.mp3
+
+# Secrets / API keys
+.env
+*.key
+*.secret
+
+# OS files
+.DS_Store
+Thumbs.db
