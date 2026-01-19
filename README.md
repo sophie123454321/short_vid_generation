@@ -9,10 +9,15 @@ Each step leverages LLMs (Azure OpenAI GPT-4.1) and Gradio endpoints for audio, 
 ## Features
 
 -Converts user text into an audio file with subtitles using a Gradio endpoint.
+
 -Generates image prompts guided by optional seed scenes.
+
 -Generates images for each prompt, with evaluation using GPT-4.1 to ensure high-quality results.
+
 -Generates video clips from images, with multiple takes for user selection.
+
 -Fully configurable using environment variables for endpoints and API keys.
+
 -Supports parallel processing for faster image and video generation.
 
 ---
@@ -82,18 +87,31 @@ python short_vid_gen_videos.py
 ---
 
 ## File Structure
+
 short_vid_generation/
+
 │
+
 ├─ short_vid_gen_subtitle.py
+
 ├─ short_vid_gen_image_prompts.py
+
 ├─ short_vid_gen_images.py
+
 ├─ short_vid_gen_videos.py
+
 ├─ short_vid_video_meta_prompt.py
+
 ├─ short_vid_evaluation.py
+
 ├─ short_vid_gen_subtitle.py
+
 ├─ <vid_id>_*.json  # generated subtitles, prompts, scenes
+
 ├─ <vid_id>_images/  # generated images
+
 ├─ <vid_id>_videos/  # generated video clips
+
 └─ README.md
 
 ---
@@ -101,8 +119,11 @@ short_vid_generation/
 ## Notes
 
 -Ensure your environment variables are properly set before running any scripts.
+
 -Image generation includes evaluation by GPT-4.1, but video generation does not perform evaluation. The video model outputs directly from the prompts.
+
 -Retry logic is included for both images and videos to handle transient API errors.
+
 -Scripts must be run in order for best results: subtitles -> image prompts -> images -> videos
 
 ---
@@ -117,4 +138,5 @@ seed_scenes = "1) A small orange cat sits like a human slouched on an office cha
 Final result: https://www.youtube.com/shorts/IC9rqnvBRWU
 
 Note: editing and background audio added manually
+
 
